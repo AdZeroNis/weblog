@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="alert alert-primary">
+<body class="container">
+    <div>
         سلام
     </div>
 </body>
