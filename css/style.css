@@ -46,3 +46,6 @@
 	border-radius: 15px;
 	margin-left: -38px;
 }
+.dropdown-menu a{
+	font-size: 13px;
+}
