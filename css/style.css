@@ -86,11 +86,12 @@ body{
 .btn-outline-success
 {
   color: #fff;
-  border: 1px solid #5B84C4 !important;;
+  border: 1px solid #5B84C4 !important;
+  margin-right: 3px;
 }
 .btn-outline-success:hover{
 	background-color: #5B84C4 !important;
-	border-color: #5B84C4 !important;;
+	border-color: #5B84C4 !important;
 }
 
 .form-control
