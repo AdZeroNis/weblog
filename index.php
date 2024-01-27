@@ -48,9 +48,11 @@
         </div>
         <div class="col-4 information-site">
              <img src="image/stat-teacher.svg">
+             <span>تعداد نویسندگان</span>
         </div>
         <div class="col-4 information-site">
               <img src="image/stat-student.svg">
+              <span>تعداد کاربران</span>
         </div>
     </div>
 </div>
