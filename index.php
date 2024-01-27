@@ -34,15 +34,17 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0 mr-auto">
-      <input class="form-control mr-sm-2 placeholder" type="search" placeholder="سرچ" aria-label="Search">
+      <input class="form-control mr-sm-2 placeholder" type="search" placeholder="چی میخوای؟" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
     </form>
   </div>
 </nav>
+<br><br>
 <div>
     <div class="row">
         <div class="col-4 information-site">
             <img src="image/stat-time.svg">
+            <span>تعداد مقالات</span>
         </div>
         <div class="col-4 information-site">
              <img src="image/stat-teacher.svg">
