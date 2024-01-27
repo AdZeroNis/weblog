@@ -47,6 +47,9 @@ body{
 	border-radius: 15px;
 	margin-left: -38px;
 }
+.dropdown-menu a:hover{
+	background-color: #5B84C4;
+} 
 .dropdown-menu a{
 	font-size: 13px;
 }
