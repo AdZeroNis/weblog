@@ -28,7 +28,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">برنامه نویسی</a>
           <a class="dropdown-item" href="#">طراحی وب</a>
-          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">بازی سازی</a>
         </div>
       </li>

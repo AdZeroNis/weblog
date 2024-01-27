@@ -41,3 +41,8 @@
 .placeholder{
 	font-size: 14px;
 }
+.dropdown-menu{
+	text-align: right;
+	border-radius: 15px;
+	margin-left: -38px;
+}
