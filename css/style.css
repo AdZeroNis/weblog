@@ -49,3 +49,11 @@
 .dropdown-menu a{
 	font-size: 13px;
 }
+.information-site{
+	background-color: #333;
+	border-left: 100px solid #fff;
+	border-right: 100px solid #fff;
+}
+.information-site img{
+	height: 150px;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container">
+    <br>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">وبلاگ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +39,19 @@
     </form>
   </div>
 </nav>
+<div>
+    <div class="row">
+        <div class="col-4 information-site">
+            <img src="image/stat-time.svg">
+        </div>
+        <div class="col-4 information-site">
+             <img src="image/stat-teacher.svg">
+        </div>
+        <div class="col-4 information-site">
+              <img src="image/stat-student.svg">
+        </div>
+    </div>
+</div>
 </body>
 <script src="js/jquery-3.5.1.min.js"></script> 
   <script src="js/bootstrap.min.js"></script> 
