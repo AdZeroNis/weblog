@@ -14,7 +14,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ">
       <li class="nav-item active">
         <a class="nav-link" href="#">خانه <span class="sr-only">(current)</span></a>
       </li>
@@ -33,7 +33,7 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0 mr-auto">
       <input class="form-control mr-sm-2 placeholder" type="search" placeholder="سرچ" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
     </form>
