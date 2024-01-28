@@ -149,3 +149,9 @@ a:hover{
 	color:#fff;
 	border-radius: 0;
 }
+.hovershow{
+	display: none;
+}
+.post-item:hover .hovershow{
+	display: block;
+}
