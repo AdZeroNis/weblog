@@ -103,3 +103,29 @@ body{
   background-color: #111b28;
   border: 1px solid #5B84C4 !important;;
 }
+.post-item a{
+	font-weight: bold !important;
+	font-size: 12px;
+	
+}
+.post-item p{
+	padding-top: 18px ;
+}
+
+a{
+	color: #76b2ff;
+	text-decoration: none ;
+}
+a:hover{
+	text-decoration: none;
+}
+.post-item{
+	border: 1px solid #ecf0f4;
+}
+.post-item span{
+	color: #686e71;
+	font-size: 14px;
+}
+.post-caption{
+	padding: 0 11px;
+}

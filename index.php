@@ -41,11 +41,11 @@
 </nav>
 <br><br>
 <div>
-    <div class="row">
+    <div class="row d-none d-lg-flex">
         <div class="col-4 information-site">
             <img src="image/stat-time.svg">
             <span>تعداد مقالات</span>
-            <span>۱۰</span>
+            <span>۵</span>
         </div>
         <div class="col-4 information-site">
              <img src="image/stat-teacher.svg">
@@ -58,6 +58,21 @@
               <span>۸</span>
         </div>
     </div>
+</div>
+<br>
+<div>
+  <h4 style="color:#fff; padding:10px">مقالات</h4><br>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+       <div class="post-item">
+       <a href=""><img src="image/post1.png" width="100%"></a>
+       <div class="post-caption">
+       <p><a href="">چطور بفهمیم وبسایتی که طراحی کردیم خوب است یا بد؟</a></p>
+       <span>همان قدری که کلمات برای یک سخنران مهم است ، طراحی یک وبسایت هم برای تجارت حیاتی است ! </span>
+       </div>
+       </div>
+    </div>
+  </div>
 </div>
 </body>
 <script src="js/jquery-3.5.1.min.js"></script> 
