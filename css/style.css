@@ -37,6 +37,7 @@
 }
 body{
 	background-color: #111b28;
+	color: #fff;
 }
 .placeholder{
 	font-size: 14px;
@@ -204,4 +205,8 @@ footer .footer1 form input.input-group{
 }
 .information-person svg{
 	margin-top: 4px;
+}
+.content-page{
+	width: 550px;
+	line-height: 37px;
 }
