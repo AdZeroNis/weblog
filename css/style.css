@@ -181,3 +181,27 @@ footer .footer1 form input.input-group{
 .foot{
 	margin-right: 282px;
 }
+.post-page{
+	padding: 20px;
+	margin-right: 289px;
+	border: 2px dashed #5B84C4;
+	border-radius: 15px;
+}
+.image-post img{
+	border-radius: 10px 10px 250px 10px;
+}
+.person{
+	color:#fff
+}
+.calendar{
+	color: #fff;
+}
+.eye{
+	color: #fff;
+}
+.information-person{
+	margin-top: -39px;
+}
+.information-person svg{
+	margin-top: 4px;
+}
