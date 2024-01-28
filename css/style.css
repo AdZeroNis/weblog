@@ -129,3 +129,23 @@ a:hover{
 .post-caption{
 	padding: 0 11px;
 }
+.hover-image-post{
+	height: 247px;
+	width: 348px;
+	background-color: #000;
+	opacity: 0.6;
+	margin-top: -248px;
+}
+.more-opst{
+	font-size: 15px !important;
+	border: 1.5px solid #fff;
+	color: #fff;
+	margin-top: -139px;
+	position: absolute;
+	margin-right: 114px;
+	border-radius: 7px;
+}
+.more-opst:hover{
+	color:#fff;
+	border-radius: 0;
+}

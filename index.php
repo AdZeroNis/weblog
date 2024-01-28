@@ -65,7 +65,11 @@
   <div class="row">
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post1.png" width="100%"></a>
+       <a href=""><img src="image/post1.png" width="100%">
+       <div class="hover-image-post">
+       </div>
+       <a href="" class="more-opst btn">مشاهده ی مقاله</a>
+      </a>
        <div class="post-caption">
        <p><a href="">چطور بفهمیم وبسایتی که طراحی کردیم خوب است یا بد؟</a></p>
        <span>همان قدری که کلمات برای یک سخنران مهم است ، طراحی یک وبسایت هم برای تجارت حیاتی است ! </span>
