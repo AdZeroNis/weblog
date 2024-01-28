@@ -121,6 +121,7 @@ a:hover{
 }
 .post-item{
 	border: 1px solid #ecf0f4;
+	margin-top: 25px;
 }
 .post-item span{
 	color: #686e71;

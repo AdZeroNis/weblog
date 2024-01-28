@@ -59,9 +59,9 @@
         </div>
     </div>
 </div>
-<br>
+<br class="d-none d-lg-block">
 <div>
-  <h4 style="color:#fff; padding:10px">مقالات</h4><br>
+  <h4 style="color:#fff; padding:10px">مقالات</h4>
   <div class="row">
     <div class="col-12 col-lg-4">
        <div class="post-item">
