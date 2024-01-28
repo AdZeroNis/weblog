@@ -160,8 +160,8 @@
 <footer>
   <div class="footer1">
     <div class="container">
-      <div class="row">
-      <div class="col-12 col-lg-6 foot"><br><br><br><br><br>
+      <div class="row d-none d-lg-flex">
+      <div class="col-12 col-lg-6 foot "><br><br><br><br><br>
         <form>
           <input type="text" class="input-group" placeholder="ایمیل">
           <input type="submit" class="btn btn-success" value="عضویت">
