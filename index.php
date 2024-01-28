@@ -66,9 +66,9 @@
     <div class="col-12 col-lg-4">
        <div class="post-item">
        <a href=""><img src="image/post1.png" width="100%">
-       <div class="hover-image-post">
+       <div class="hover-image-post d-none d-lg-flex">
        </div>
-       <a href="" class="more-opst btn">مشاهده ی مقاله</a>
+       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
       </a>
        <div class="post-caption">
        <p><a href="">چطور بفهمیم وبسایتی که طراحی کردیم خوب است یا بد؟</a></p>
