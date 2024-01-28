@@ -156,3 +156,28 @@ a:hover{
 .post-item:hover .hovershow{
 	display: block;
 }
+footer .footer1{
+	background: url('https://toplearn.com/site/images/footer-pattern.png') repeat 0 0 #5B84C4;
+	height: 250px;
+}
+.btn-success
+{
+  background-color: #273e5c !important;
+  color: #fff;
+  border-color: #273e5c !important;
+}
+.btn-success:hover{
+	background-color: #111b28 !important;
+	border-color: #111b28 !important;
+}
+footer .footer1 form input.input-group{
+	width: 86%;
+	height: 42px;
+	display: inline;
+	border: 0px;
+	border-radius: 6px;
+
+}
+.foot{
+	margin-right: 282px;
+}

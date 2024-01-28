@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container">
-    <br>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">وبلاگ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -119,7 +119,7 @@
       </a>
        <div class="post-caption">
        <p><a href="">دستیار صوتی چیست؟</a></p>
-       <span>تا حالا به این فکر کردین که آیا میشه با کامپیوتر یا گوشی های هوشمند حرف زد؟ میشه به گوشی یا کامپیوتر هایمان بگوییم </span>
+       <span>تا حالا به این فکر کردین که آیا میشه با کامپیوتر یا گوشی های هوشمند حرف زد؟ </span>
        </div>
        </div>
     </div>
@@ -155,6 +155,22 @@
     </div>
   </div>
 </div>
+  </div>
+  <br><br><br>
+<footer>
+  <div class="footer1">
+    <div class="container">
+      <div class="row">
+      <div class="col-12 col-lg-6 foot"><br><br><br><br><br>
+        <form>
+          <input type="text" class="input-group" placeholder="ایمیل">
+          <input type="submit" class="btn btn-success" value="ارسال">
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 <script src="js/jquery-3.5.1.min.js"></script> 
   <script src="js/bootstrap.min.js"></script> 
