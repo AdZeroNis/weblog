@@ -120,7 +120,7 @@ a:hover{
 	text-decoration: none;
 }
 .post-item{
-	border: 1px solid #ecf0f4;
+	border: 1px solid #5B84C4;
 	margin-top: 25px;
 }
 .post-item span{
@@ -131,11 +131,11 @@ a:hover{
 	padding: 0 11px;
 }
 .hover-image-post{
-	height: 247px;
-	width: 348px;
-	background-color: #000;
-	opacity: 0.6;
-	margin-top: -248px;
+		height: 250px;
+		width: 348px;
+		background-color: #000;
+		opacity: 0.6;
+		margin-top: -249px;
 }
 .more-opst{
 	font-size: 15px !important;
