@@ -55,8 +55,8 @@ body{
 }
 .information-site{
 	background-color: #111b28 !important;
-	border-left: 100px solid #111b28;
-	border-right: 100px solid #111b28;
+	border-left: 50px solid #111b28;
+	border-right: 50px solid #111b28;
 	text-align: center;
 	padding: 6px;
 }
