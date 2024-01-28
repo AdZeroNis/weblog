@@ -80,7 +80,7 @@
         </div>
     </div>
   </div>
-  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
+  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
 <footer>
   <div class="footer1">
     <div class="container">
