@@ -85,7 +85,38 @@
             <textarea  rows="4" cols="50" name="comment" placeholder="نظر خود را وارد کنید..."></textarea>
             <br><br>
             <input type="submit" class="btn btn-success" value="ارسال نظر">
-            </form>
+            </form><br>
+            <div class="comments">
+            <div class="comment-item">
+              <div class="commnet-image">
+               <img src="../image/prof.jpg" class="comment-img" alt="">
+              </div>
+              <div class="commnent-text">
+                <p class="username-comment">شقایق کریمی</p>
+                <span>ارسال شده در ۱۴۰۲/۰۵/۲۸</span>
+                <a href="" class="btn btn-success" style="margin-right:5px;">ثبت</a>
+                <a href="" class="btn btn-warning">گزارش</a><br>
+                <p class="text-comment">سلام،این کاربر بَمُرده؛لطفا زودتر تمام شو.</p>
+                <p class="text-comment">گشنمه</p>
+                <p class="text-comment">im hungry</p>
+              </div>
+             </div>
+             <div class="comment-item">
+              <div class="commnet-image">
+               <img src="../image/pr.jpg" class="comment-img" alt="">
+              </div>
+              <div class="commnent-text">
+                <p class="username-comment">شقایق کریمی</p>
+                <span>ارسال شده در ۱۴۰۲/۰۵/۲۸</span>
+                <a href="" class="btn btn-success" style="margin-right:5px;">ثبت</a>
+                <a href="" class="btn btn-warning">گزارش</a><br>
+                <p class="text-comment">سلام،این کاربر بَمُرده؛لطفا زودتر تمام شو.</p>
+                <p class="text-comment">گشنمه</p>
+                <p class="text-comment">im hungry</p>
+              </div>
+             </div>
+
+            </div>
             </div>
         </div>
         </div>
