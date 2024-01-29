@@ -258,7 +258,7 @@ p.text-comment{
 	margin-bottom: 20px;
 	height: 43px;
 	border-radius: 10px;
-	outline: none;
+	/* outline: none; */
 	border: 1px solid #142848;
 	background-color: #c6dcff;
 	font-size: 14px;
