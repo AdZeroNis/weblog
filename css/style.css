@@ -253,3 +253,17 @@ p.text-comment{
 	margin-right: 80px;
 	margin-bottom: 20px;
 }
+.register-form input{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 43px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid #142848;
+	background-color: #c6dcff;
+	font-size: 14px;
+	padding: 5px 8px;
+}
+.register-submit{
+	background-color: #007bff !important;
+}
