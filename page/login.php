@@ -46,11 +46,12 @@
         <div class="col-lg-4"> </div>
         <div class="col-12 col-lg-4">
             <form method="post" class="register-form">
-                <input type="text" placeholder="نام کاربری">
                 <input type="email" placeholder="ایمیل">
-                <input type="number" placeholder="سن">
                 <input type="password" placeholder="رمر عبور"><br>
-                <input type="submit" value="ثبت نام" class="btn btn-primary   register-submit">
+                <input type="submit" value="ورود" class="btn btn-primary   register-submit">
+                <input type="checkbox" class="checkbox" style="width: 5%; margin-top: -17px;">
+                <label class="form-check-label" style="font-size:14px;">مرا به خاطر بسپار</label>
+
             </form>
         </div>
         <div class="col-lg-4"> </div>
