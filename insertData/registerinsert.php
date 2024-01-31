@@ -1,6 +1,6 @@
 <?php
 include '../database/db.php';
-
+$successmassage='';
 if(isset($_POST['signup'])){
 
     $username=$_POST['username'];
@@ -13,6 +13,9 @@ if(isset($_POST['signup'])){
     $result->bindValue(2,$email);
     $result->bindValue(3,$password);
     $result->bindValue(4,$age);
-    $result->execute();
+    if($result->execute()){
+        $successmassage=true;
+    }else{
+        $successmassage=false;
+    }
 }
-?>

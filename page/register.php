@@ -8,6 +8,7 @@ include '../insertData/registerinsert.php';
     <title>Weblog</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -75,6 +76,9 @@ include '../insertData/registerinsert.php';
   </div>
 </footer>
 </body>
+<?php  if($successmassage){?>
+  <script src="alert.js"></script>
+  <?php } ?>
 <script src="../js/jquery-3.5.1.min.js"></script> 
   <script src="../js/bootstrap.min.js"></script> 
 </html>
