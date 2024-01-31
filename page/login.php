@@ -50,7 +50,7 @@
                 <input type="password" placeholder="رمر عبور"><br>
                 <input type="submit" value="ورود" class="btn btn-primary   register-submit">
                 <input type="checkbox" class="checkbox" style="width: 5%; margin-top: -17px;">
-                <label class="form-check-label" style="font-size:14px;">مرا به خاطر بسپار</label>
+                <label class="rememberlabel" style="margin-right: 30px; margin-top: -50px;display: flex;font-size: 14px;" >مرا به خاطر بسپار</label>
 
             </form>
         </div>
