@@ -1,6 +1,4 @@
-<?php
-include '../insertData/registerinsert.php';
-?>
+<?php  include "../php/registerinsert.php" ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +47,7 @@ include '../insertData/registerinsert.php';
     <div class="row">
         <div class="col-lg-4"> </div>
         <div class="col-12 col-lg-4">
-            <form method="post" class="register-form">
+            <form  method="post" class="register-form" >
                 <input name="username" type="text" placeholder="نام کاربری">
                 <input name="email" type="email" placeholder="ایمیل">
                 <input name="age" type="number" placeholder="سن">
@@ -77,10 +75,10 @@ include '../insertData/registerinsert.php';
 </footer>
 </body>
 <?php  if($successmassage){?>
-  <script src="alert.js"></script>
+  <script src="../js/alertsuccess.js"></script>
   <?php } ?>
   <?php  if($errormassage){?>
-  <script src="alerterror.js"></script>
+  <script src="../js/alerterror.js"></script>
   <?php } ?>
 <script src="../js/jquery-3.5.1.min.js"></script> 
   <script src="../js/bootstrap.min.js"></script> 

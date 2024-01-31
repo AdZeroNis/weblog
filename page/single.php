@@ -46,7 +46,7 @@
     <div class="row">
         <div class="post-page">
             <div class="image-post">
-                <img src="../image/post1.png" style="max-width: 550px;">
+                <img src="../Asset/image/post1.png" style="max-width: 550px;">
             </div>
             <div class="information-person">
             <div class="eye">
@@ -89,7 +89,7 @@
             <div class="comments">
             <div class="comment-item">
               <div class="commnet-image">
-               <img src="../image/prof.jpg" class="comment-img" alt="">
+               <img src="../Asset/image/pr.jpg" class="comment-img" alt="">
               </div>
               <div class="commnent-text">
                 <p class="username-comment">شقایق کریمی</p>
@@ -103,7 +103,7 @@
              </div>
              <div class="comment-item">
               <div class="commnet-image">
-               <img src="../image/pr.jpg" class="comment-img" alt="">
+               <img src="../Asset/image/prof.jpg" class="comment-img" alt="">
               </div>
               <div class="commnent-text">
                 <p class="username-comment">شقایق کریمی</p>

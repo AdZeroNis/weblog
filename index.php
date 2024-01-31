@@ -1,5 +1,5 @@
 <?php
-include 'database/db.php';
+include 'php/database/db.php';
 ?>
 <html lang="en">
 <head>
@@ -68,7 +68,7 @@ include 'database/db.php';
   <div class="row">
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post1.png" width="100%">
+       <a href=""><img src="Asset/image/post1.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -83,7 +83,7 @@ include 'database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post2.png" width="100%">
+       <a href=""><img src="Asset/image/post2.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -98,7 +98,7 @@ include 'database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post3.png" width="100%">
+       <a href=""><img src="Asset/image/post3.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -113,7 +113,7 @@ include 'database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post4.png" width="100%">
+       <a href=""><img src="Asset/image/post4.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -128,7 +128,7 @@ include 'database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post5.png" width="100%">
+       <a href=""><img src="Asset/image/post5.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -143,7 +143,7 @@ include 'database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="image/post6.png" width="100%">
+       <a href=""><img src="Asset/image/post6.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
