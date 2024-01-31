@@ -1,6 +1,7 @@
 <?php
 include '../database/db.php';
 $successmassage='';
+$errormassage='';
 if(isset($_POST['signup'])){
 
     $username=$_POST['username'];
@@ -9,13 +10,17 @@ if(isset($_POST['signup'])){
     $age=$_POST['age'];
 
     $result=$conn->prepare("INSERT INTO user(username,email,password,age) VALUES(?,?,?,?)");
-    $result->bindValue(1,$username);
-    $result->bindValue(2,$email);
-    $result->bindValue(3,$password);
-    $result->bindValue(4,$age);
-    if($result->execute()){
-        $successmassage=true;
+    if(empty($username)|| empty($email)|| empty($password)){
+        $errormassage=true;
     }else{
-        $successmassage=false;
+        $result->bindValue(1,$username);
+        $result->bindValue(2,$email);
+        $result->bindValue(3,$password);
+        $result->bindValue(4,$age);
+        if($result->execute()){
+            $successmassage=true;
+        }else{
+            $successmassage=false;
+        }
     }
 }

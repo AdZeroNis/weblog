@@ -79,6 +79,9 @@ include '../insertData/registerinsert.php';
 <?php  if($successmassage){?>
   <script src="alert.js"></script>
   <?php } ?>
+  <?php  if($errormassage){?>
+  <script src="alerterror.js"></script>
+  <?php } ?>
 <script src="../js/jquery-3.5.1.min.js"></script> 
   <script src="../js/bootstrap.min.js"></script> 
 </html>
