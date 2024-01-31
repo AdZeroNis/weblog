@@ -1,3 +1,6 @@
+<?php
+include '../insertData/registerinsert.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,11 +49,11 @@
         <div class="col-lg-4"> </div>
         <div class="col-12 col-lg-4">
             <form method="post" class="register-form">
-                <input type="text" placeholder="نام کاربری">
-                <input type="email" placeholder="ایمیل">
-                <input type="number" placeholder="سن">
-                <input type="password" placeholder="رمر عبور"><br>
-                <input type="submit" value="ثبت نام" class="btn btn-primary   register-submit">
+                <input name="username" type="text" placeholder="نام کاربری">
+                <input name="email" type="email" placeholder="ایمیل">
+                <input name="age" type="number" placeholder="سن">
+                <input name="password" type="password" placeholder="رمر عبور"><br>
+                <input name="signup" type="submit" value="ثبت نام" class="btn btn-primary   register-submit">
             </form>
         </div>
         <div class="col-lg-4"> </div>
