@@ -28,7 +28,7 @@ include '../php/db.php'?>
       <li class="nav-item dropdown">
       <?php if (isset($_SESSION['signin'])){?>
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          مقالات
+          حساب کاربری
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">ایمیل : <?php echo $_SESSION['email']; ?></a>
