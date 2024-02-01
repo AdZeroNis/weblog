@@ -1,13 +1,12 @@
 <?php
-include '../php/database/db.php';
 ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weblog</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <div class="container">
@@ -46,17 +45,17 @@ include '../php/database/db.php';
 <div>
     <div class="row d-none d-lg-flex">
         <div class="col-4 information-site">
-            <img src="image/stat-time.svg">
+            <img src="../Asset/image/stat-time.svg">
             <span>تعداد مقالات</span>
             <span>۵</span>
         </div>
         <div class="col-4 information-site">
-             <img src="image/stat-teacher.svg">
+             <img src="../Asset/image/stat-teacher.svg">
              <span>تعداد نویسندگان</span>
              <span>۵</span>
         </div>
         <div class="col-4 information-site">
-              <img src="image/stat-student.svg">
+              <img src="../Asset/image/stat-student.svg">
               <span>تعداد کاربران</span>
               <span>۸</span>
         </div>
@@ -68,7 +67,7 @@ include '../php/database/db.php';
   <div class="row">
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post1.png" width="100%">
+       <a href=""><img src="../Asset/image/post1.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -83,7 +82,7 @@ include '../php/database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post2.png" width="100%">
+       <a href=""><img src="../Asset/image/post2.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -98,7 +97,7 @@ include '../php/database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post3.png" width="100%">
+       <a href=""><img src="../Asset/image/post3.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -113,7 +112,7 @@ include '../php/database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post4.png" width="100%">
+       <a href=""><img src="../Asset/image/post4.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -128,7 +127,7 @@ include '../php/database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post5.png" width="100%">
+       <a href=""><img src="../Asset/image/post5.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -143,7 +142,7 @@ include '../php/database/db.php';
     </div>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="Asset/image/post6.png" width="100%">
+       <a href=""><img src="../Asset/image/post6.png" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -175,6 +174,6 @@ include '../php/database/db.php';
   </div>
 </footer>
 </body>
-<script src="js/jquery-3.5.1.min.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
+<script src="../js/jquery-3.5.1.min.js"></script> 
+  <script src="../js/bootstrap.min.js"></script> 
 </html>
