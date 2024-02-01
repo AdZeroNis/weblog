@@ -31,9 +31,9 @@ include '../php/db.php'?>
           مقالات
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">برنامه نویسی</a>
-          <a class="dropdown-item" href="#">طراحی وب</a>
-          <a class="dropdown-item" href="#">بازی سازی</a>
+          <a class="dropdown-item" href="#">ایمیل : <?php echo $_SESSION['email']; ?></a>
+          <a class="dropdown-item" href="#">سن : <?php echo $_SESSION['age']; ?></a>
+          <a class="dropdown-item" href="#">اسم : <?php echo $_SESSION['username']; ?></a>
         </div>
       </li>
       <?php } ?>

@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+session_start();
 $errorCheck='';
 $successmassage='';
 $errormassage='';
@@ -26,7 +27,12 @@ if(isset($_POST['signup'])){
             $result->bindValue(3,$password);
             $result->bindValue(4,$age);
             if($result->execute()){
-                $successmassage=true;
+                $_SESSION['signin']=true;
+                $_SESSION['email']=$email;
+                $_SESSION['password']=$password;
+                $_SESSION['age']=$age;
+                $_SESSION['username']=$username;
+                header('location:../page/index.php');
             }else{
                 $successmassage=false;
             }
