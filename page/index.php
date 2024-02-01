@@ -1,5 +1,6 @@
-<?php
-?>
+<?php 
+session_start();
+include '../php/db.php'?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,6 +26,7 @@
         <a class="nav-link" href="#">پروفایل</a>
       </li>
       <li class="nav-item dropdown">
+      <?php if (isset($_SESSION['signin'])){?>
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           مقالات
         </a>
@@ -33,6 +35,10 @@
           <a class="dropdown-item" href="#">طراحی وب</a>
           <a class="dropdown-item" href="#">بازی سازی</a>
         </div>
+      </li>
+      <?php } ?>
+      <li>
+        <a href="log.php">خروج</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0 mr-auto">

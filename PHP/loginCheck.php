@@ -1,6 +1,7 @@
 <?php
 include 'db.php';
 include 'registerinsert.php';
+session_start();
 $loginCheck='';
 $errormassage='';
 $successmassage='';
@@ -16,7 +17,11 @@ if(isset($_POST['login'])){
         $result->bindParam(2, $password);
         $result->execute();
         if ($result->rowCount()>0){
-            $successmassage=true;
+            $rows=$result->fetch(PDO::FETCH_ASSOC);
+            $_SESSION['signin']=true;
+            $_SESSION['email']=$email;
+            $_SESSION['password']=$password;
+            header('location:../page/index.php');
         }else{
             $loginCheck=true;
         }

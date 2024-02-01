@@ -1,4 +1,5 @@
-<?php  include "../php/loginCheck.php" ?>
+<?php 
+ include "../php/loginCheck.php" ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
