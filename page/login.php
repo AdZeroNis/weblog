@@ -1,3 +1,4 @@
+<?php  include "../php/loginCheck.php" ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,6 +6,7 @@
     <title>Weblog</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -46,10 +48,10 @@
         <div class="col-lg-4"> </div>
         <div class="col-12 col-lg-4">
             <form method="post" class="register-form">
-                <input type="email" placeholder="ایمیل">
-                <input type="password" placeholder="رمر عبور"><br>
-                <input type="submit" value="ورود" class="btn btn-primary   register-submit">
-                <input type="checkbox" class="checkbox" style="width: 5%; margin-top: -17px;">
+                <input name="email" type="email" placeholder="ایمیل">
+                <input name="password" type="password" placeholder="رمر عبور"><br>
+                <input name="login" type="submit" value="ورود" class="btn btn-primary   register-submit">
+                <input name="rem" type="checkbox" class="checkbox" style="width: 5%; margin-top: -17px;">
                 <label class="rememberlabel" style="margin-right: 30px; margin-top: -50px;display: flex;font-size: 14px;" >مرا به خاطر بسپار</label>
 
             </form>
@@ -73,6 +75,15 @@
   </div>
 </footer>
 </body>
+<?php  if($errormassage){?>
+  <script src="../js/alerterror.js"></script>
+  <?php } ?>
+<?php  if($loginCheck){?>
+  <script src="../js/loginCheck.js"></script>
+  <?php } ?>
+<?php  if($successmassage){?>
+  <script src="../js/alertsuccess.js"></script>
+  <?php } ?>
 <script src="../js/jquery-3.5.1.min.js"></script> 
   <script src="../js/bootstrap.min.js"></script> 
 </html>
