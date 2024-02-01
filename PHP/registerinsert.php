@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+$errorCheck='';
 $successmassage='';
 $errormassage='';
 if(isset($_POST['signup'])){
@@ -14,7 +15,7 @@ if(isset($_POST['signup'])){
     $checkuser->execute();
 
     if($checkuser->rowCount()>0){
-        $errormassage="شما قبلا وارد سیستم شدید،لطفا ورود کنید";
+        $errorCheck=true;
     }else{
         $result=$conn->prepare("INSERT INTO user(username,email,password,age) VALUES(?,?,?,?)");
         if(empty($username)|| empty($email)|| empty($password)){

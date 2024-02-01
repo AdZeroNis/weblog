@@ -74,6 +74,9 @@
   </div>
 </footer>
 </body>
+<?php  if($errorCheck){?>
+  <script src="../js/errorCheck.js"></script>
+  <?php } ?>
 <?php  if($successmassage){?>
   <script src="../js/alertsuccess.js"></script>
   <?php } ?>
