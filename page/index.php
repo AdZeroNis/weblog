@@ -34,12 +34,18 @@ include '../php/db.php'?>
           <a class="dropdown-item" href="#">ایمیل : <?php echo $_SESSION['email']; ?></a>
           <a class="dropdown-item" href="#">سن : <?php echo $_SESSION['age']; ?></a>
           <a class="dropdown-item" href="#">اسم : <?php echo $_SESSION['username']; ?></a>
+          <a class="dropdown-item" href="log.php">خروج</a>
         </div>
       </li>
-      <?php } ?>
-      <li>
-        <a href="log.php">خروج</a>
+      <?php } else { ?>
+        <li class="nav-item active">
+        <a class="nav-link" href="login.php">ورود<span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="register.php">ثبت نام <span class="sr-only">(current)</span></a>
+      </li>
+      <?php } ?>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0 mr-auto">
       <input class="form-control mr-sm-2 placeholder" type="search" placeholder="چی میخوای؟" aria-label="Search">
