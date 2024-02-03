@@ -12,3 +12,18 @@ try{
 }catch(PDOException $e){
     echo "Error" . $e->getMessage();
 }
+
+if(isset($_COOKIE['email'])){
+    $result = $conn->prepare("SELECT * FROM `user` WHERE email=? AND password=?");
+    $result->bindParam(1, $_COOKIE['email']);
+    $result->bindParam(2, $_COOKIE['password']);
+    $result->execute();
+    if ($result->rowCount()>0){
+        $rows=$result->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['signin']=true;
+        $_SESSION['email']=$rows['email'];
+        $_SESSION['password']=$rows['password'];
+        $_SESSION['age'] = $rows['age'];
+        $_SESSION['username'] = $rows['username'];
+}
+}
