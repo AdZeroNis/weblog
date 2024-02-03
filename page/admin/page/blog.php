@@ -12,13 +12,13 @@
     <div class="row">
     <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" href="#">منو</a>
+    <a class="nav-link " href="../page/menu.php">منو</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">وبلاگ</a>
+    <a class="nav-link active" href="../page/blog.php">وبلاگ</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">کامنت ها</a>
+    <a class="nav-link" href="../page/comment.php">کامنت ها</a>
   </li>
   <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
