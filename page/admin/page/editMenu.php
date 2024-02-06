@@ -12,17 +12,18 @@
 <div class="container">
     <div class="row" style="padding: 42px;">
       <form method="post">
-        <input type="text" name="title" placeholder="عنوان" class="form-control" style="background-color: #76b2ff;"><br>
-        <input type="number" name="sort" placeholder="الویت بندی" class="form-control" style="background-color: #76b2ff;" >
+        <input type="text" name="title" placeholder="عنوان" class="form-control" style="background-color: #76b2ff;" value="<?php echo $menu['title'] ;?>"><br>
+        <input type="number" name="sort" placeholder="الویت بندی" class="form-control" style="background-color: #76b2ff;"value="<?php echo $menu['sort'] ;?>" >
         <div class="form-check"><br>
-         <input class="form-check-input" value="1" type="radio" name="rd" id="rd" checked>
+         <input class="form-check-input" value="1" type="radio" name="rd" id="rd" <?php if ($menu['status']==1) {?> checked <?php } ?> >
         <label class="form-check-label" for="rd" style="margin-right: 30px;"> فعال </label>
         </div>
          <div class="form-check">
-           <input class="form-check-input" value="0" type="radio" name="rd" id="rd" checked>
+           <input class="form-check-input" value="0" type="radio" name="rd" id="rd" <?php if ($menu['status']==0) {?> checked <?php } ?>>
             <label class="form-check-label" for="rd" style="margin-right: 30px;">غیر فعال</label>
          </div><br>
          <input type="submit" value="ثبت" name="Record" class="btn btn-primary" >
+         <a href="menu.php" class="btn btn-danger">بازگشت</a>
       </form>
       <br><br>
     </div>

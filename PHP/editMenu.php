@@ -16,3 +16,7 @@ if(isset($_POST['Record'])){
     $result->execute();
 
 }
+$result=$conn->prepare("SELECT * FROM menu WHERE id=?");
+$result->bindValue(1,$id);
+$result->execute();
+$menu=$result->fetch(PDO::FETCH_ASSOC);
