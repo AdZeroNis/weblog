@@ -57,7 +57,7 @@
       <th scope="row"><?php echo $num++ ;?></th>
       <td><?php echo $menu['title'] ;?></td>
       <td><?php echo $menu['sort'] ;?></td>
-      <td><?php echo $menu['status'] ;?></td>
+      <td><?php if($menu['status']==1){ ?> <span class="btn btn-success">فعال</span> <?php }else{ ?> <span class="btn btn-danger">غیر فعال</span> <?php } ?></td>
       <td>
         <a href="" class="btn btn-warning">ویرایش</a>
         <a href="" class="btn btn-danger">حذف</a>
