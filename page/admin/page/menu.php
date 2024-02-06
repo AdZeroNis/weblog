@@ -59,7 +59,7 @@
       <td><?php echo $menu['sort'] ;?></td>
       <td><?php if($menu['status']==1){ ?> <span class="btn btn-success">فعال</span> <?php }else{ ?> <span class="btn btn-danger">غیر فعال</span> <?php } ?></td>
       <td>
-        <a href="" class="btn btn-warning">ویرایش</a>
+        <a href="editMenu.php ?id=<?php echo $menu['id'] ;?> " class="btn btn-warning">ویرایش</a>
         <a href="" class="btn btn-danger">حذف</a>
       </td>
     </tr>
