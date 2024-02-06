@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-
+$num = 1;
 if(isset($_POST['Record'])){
  
     $title=$_POST['title'];

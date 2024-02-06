@@ -52,16 +52,18 @@
     </tr>
   </thead>
   <tbody>
-  <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+    <?php foreach($menus as $menu) { ?>
+      <tr>
+      <th scope="row"><?php echo $num++ ;?></th>
+      <td><?php echo $menu['title'] ;?></td>
+      <td><?php echo $menu['sort'] ;?></td>
+      <td><?php echo $menu['status'] ;?></td>
       <td>
         <a href="" class="btn btn-warning">ویرایش</a>
         <a href="" class="btn btn-danger">حذف</a>
       </td>
     </tr>
+    <?php } ?>
   </tbody>
 </table>
     </div>
