@@ -12,3 +12,6 @@ if(isset($_POST['Record'])){
     $result->bindValue(3,$rd);
     $result->execute();
 }
+$result=$conn->prepare("SELECT * FROM menu");
+$result->execute();
+$menus=$result->fetchAll(PDO::FETCH_ASSOC);

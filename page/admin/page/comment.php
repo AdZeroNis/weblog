@@ -15,7 +15,7 @@
     <a class="nav-link " href="../page/menu.php">منو</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../page//blog.php">وبلاگ</a>
+    <a class="nav-link" href="../page/blog.php">وبلاگ</a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="../page/comment.php">کامنت ها</a>

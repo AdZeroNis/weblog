@@ -40,6 +40,30 @@
          </div><br>
          <input type="submit" value="ثبت" name="Record" class="btn btn-primary" >
       </form>
+      <br><br>
+      <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">عنوان</th>
+      <th scope="col">الویت بندی</th>
+      <th scope="col">وضعیت</th>
+      <th scope="col">عملیات</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+        <a href="" class="btn btn-warning">ویرایش</a>
+        <a href="" class="btn btn-danger">حذف</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
     </div>
 </div>
 </body>
