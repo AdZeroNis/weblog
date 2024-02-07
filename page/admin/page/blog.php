@@ -1,3 +1,4 @@
+<?php include '../../../php/blog.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,11 @@
     <link rel="stylesheet" href="../../../css/bootstrap.css">
     <link rel="stylesheet" href="../../../css/style.css">
     <title>ADMIN</title>
+    <style>
+      input,textarea{
+        margin-bottom: 15px;
+      }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -24,6 +30,21 @@
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
+    </div>
+    <br><br>
+    <div class="row">
+      <form  method="post">
+      <input type="text" name="title" placeholder="عنوان" class="form-control" style="background-color: #76b2ff;">
+      <input type="text" name="image" placeholder="تصویر" class="form-control" style="background-color: #76b2ff;">
+      <textarea  rows="4" cols="50" name="content" placeholder="متن را وارد کنید..." style="background-color: #76b2ff;"></textarea><br>
+      <select name="writer" class="form-control"  style="background-color: #76b2ff;">
+       <?php foreach($writers as $writer){?> 
+        
+             <option value="<?php echo $writer['id']; ?>"><?php echo $writer['name']; ?></option>
+
+        <?php } ?>
+      </select>
+      </form>
     </div>
 </div>
 </body>
