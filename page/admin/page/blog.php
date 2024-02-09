@@ -43,7 +43,8 @@
              <option value="<?php echo $writer['id']; ?>"><?php echo $writer['name']; ?></option>
 
         <?php } ?>
-      </select>
+      </select><br>
+      <input type="submit" value="افزودن" name="Record" class="btn btn-primary" >
       </form>
     </div>
 </div>

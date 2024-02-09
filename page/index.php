@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../php/db.php'?>
+include '../php/db.php';?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
