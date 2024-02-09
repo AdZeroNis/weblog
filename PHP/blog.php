@@ -5,6 +5,7 @@ session_start();
  if($_SESSION['role']!=2){
   header('location:../index.php');
  }
+ $num=1;
 if(isset($_POST['Record'])){
 
     $title=$_POST['title'];
@@ -25,3 +26,7 @@ if(isset($_POST['Record'])){
 $result=$conn->prepare("SELECT * FROM writers");
 $result->execute();
 $writers=$result->fetchAll(PDO::FETCH_ASSOC);
+
+$result=$conn->prepare("SELECT * FROM blog");
+$result->execute();
+$blogs=$result->fetchAll(PDO::FETCH_ASSOC);

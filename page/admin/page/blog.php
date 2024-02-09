@@ -47,6 +47,36 @@
       <input type="submit" value="افزودن" name="Record" class="btn btn-primary" >
       </form>
     </div>
+    <div class="row">
+    <table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">عنوان</th>
+      <th scope="col">تصویر</th>
+      <th scope="col">نویسنده</th>
+      <th scope="col">تاریخ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach($blogs as $blog) { ?>
+      <tr>
+      <th scope="row"><?php echo $num++ ;?></th>
+      <td> <?php echo $blog['title']; ?></td>
+      <td><img src="<?php echo $blog['image']; ?>" height="80px" alt=""></td>
+      <td> <?php foreach($writers as $writer){ if ($blog['writer']==$writer['id']){ echo $writer['name'];}} ?></td>
+      <td><?php echo jdate('Y/m/d', $blog['date']) ?></td>
+      <td>
+        <a href="editMenu.php ?id=<?php echo $blog['id'] ;?> " class="btn btn-warning">ویرایش</a>
+        <a href="../../../php/deletemenu.php ?id=<?php echo $blog['id'] ;?>" class="btn btn-danger">حذف</a>
+      </td>
+
+      </td>
+    </tr>
+    <?php } ?>
+  </tbody>
+</table>
+    </div>
 </div>
 </body>
 <script src="../../js/jquery-3.5.1.min.js"></script>
