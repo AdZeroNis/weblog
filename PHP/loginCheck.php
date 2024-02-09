@@ -22,6 +22,7 @@ if(isset($_POST['login'])){
             $_SESSION['password']=$password;
             $_SESSION['age'] = $rows['age'];
             $_SESSION['username'] = $rows['username'];
+            $_SESSION['role'] = $rows['role'];
             if(isset($_POST['rem'])){
                 setcookie('email',$_SESSION['email'],time()+60*60*24*7,'/'); 
                 setcookie('password',$_SESSION['password'],time()+60*60*24*7,'/');          

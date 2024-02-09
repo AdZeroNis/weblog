@@ -26,5 +26,6 @@ if(isset($_COOKIE['email'])){
         $_SESSION['password']=$rows['password'];
         $_SESSION['age'] = $rows['age'];
         $_SESSION['username'] = $rows['username'];
+        $_SESSION['role'] = $rows['role'];
 }
 }

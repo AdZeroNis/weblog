@@ -1,5 +1,10 @@
 <?php
 include 'db.php';
+session_start();
+
+ if($_SESSION['role']!=2){
+  header('location:../index.php');
+ }
 $num = 1;
 if(isset($_POST['Record'])){
  

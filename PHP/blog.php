@@ -1,6 +1,10 @@
 <?php
 include 'db.php';
+session_start();
 
+ if($_SESSION['role']!=2){
+  header('location:../index.php');
+ }
 if(isset($_POST['Record'])){
 
     $title=$_POST['title'];

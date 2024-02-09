@@ -1,3 +1,12 @@
+<?php  
+session_start();
+ include '../../php/db.php';
+
+ if($_SESSION['role']!=2){
+  header('location:../index.php');
+ }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
