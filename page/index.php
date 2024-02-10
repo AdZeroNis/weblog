@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../php/db.php';?>
+include '../php/index.php';?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,17 +64,17 @@ include '../php/db.php';?>
         <div class="col-4 information-site">
             <img src="../Asset/image/stat-time.svg">
             <span>تعداد مقالات</span>
-            <span>۵</span>
+            <span><?php echo $numblog; ?></span>
         </div>
         <div class="col-4 information-site">
              <img src="../Asset/image/stat-teacher.svg">
              <span>تعداد نویسندگان</span>
-             <span>۵</span>
+             <span><?php echo $numwriter; ?></span>
         </div>
         <div class="col-4 information-site">
               <img src="../Asset/image/stat-student.svg">
               <span>تعداد کاربران</span>
-              <span>۸</span>
+              <span><?php echo $numuser; ?></span>
         </div>
     </div>
 </div>
