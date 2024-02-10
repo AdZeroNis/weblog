@@ -41,7 +41,7 @@
       <select name="writer" class="form-control"  style="background-color: #76b2ff;">
        <?php foreach($writers as $writer){?> 
         
-             <option value="<?php echo $writer['id']; ?>"><?php echo $writer['name']; ?></option>
+             <option value="<?php echo $writer['id']; ?>"  <?php if ($blogs['writer']==$writer['id']){?>selected<?php }?>><?php echo $writer['name']; ?></option>
 
         <?php } ?>
       </select><br>
