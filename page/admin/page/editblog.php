@@ -46,6 +46,7 @@
         <?php } ?>
       </select><br>
       <input type="submit" value="ویرایش" name="Record" class="btn btn-primary" >
+      <a href="blog.php" class="btn btn-danger" style="margin-bottom: 13px;">بازگشت</a>
       </form>
     </div>
     </div>
