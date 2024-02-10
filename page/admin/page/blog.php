@@ -67,7 +67,7 @@
       <td> <?php foreach($writers as $writer){ if ($blog['writer']==$writer['id']){ echo $writer['name'];}} ?></td>
       <td><?php echo jdate('Y/m/d', $blog['date']) ?></td>
       <td>
-        <a href="editMenu.php ?id=<?php echo $blog['id'] ;?> " class="btn btn-warning">ویرایش</a>
+        <a href="editblog.php ?id=<?php echo $blog['id'] ;?> " class="btn btn-warning">ویرایش</a>
         <a href="../../../php/deletemenu.php ?id=<?php echo $blog['id'] ;?>" class="btn btn-danger">حذف</a>
       </td>
 

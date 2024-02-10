@@ -35,7 +35,6 @@ include '../php/db.php';?>
           <a class="dropdown-item" href="#">سن : <?php echo $_SESSION['age']; ?></a>
           <a class="dropdown-item" href="#">اسم : <?php echo $_SESSION['username']; ?></a>
 <?php if (isset($_SESSION['signin']) && isset($_SESSION['role'])) { ?>
-    <!-- Your existing code -->
     <?php if ($_SESSION['role'] ==  2) { ?>
         <a class="dropdown-item" href="admin/admin.php">پنل  ادمین : <?php echo $_SESSION['role']; ?></a>
     <?php } ?>
