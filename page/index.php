@@ -86,9 +86,10 @@ include '../php/index.php';?>
 <div>
   <h4 style="color:#fff; padding:10px">مقالات</h4>
   <div class="row">
+  <?php foreach($blogs as $blog){ ?>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="../Asset/image/post1.png" width="100%">
+       <a href=""><img src="<?php echo $blog['image']; ?>" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
@@ -96,85 +97,13 @@ include '../php/index.php';?>
       </div>
       </a>
        <div class="post-caption">
-       <p><a href="">چطور بفهمیم وبسایتی که طراحی کردیم خوب است یا بد؟</a></p>
+       <p><a href=""><?php echo $blog['title']; ?></a></p>
        <span>همان قدری که کلمات برای یک سخنران مهم است ، طراحی یک وبسایت هم برای تجارت حیاتی است ! </span>
        </div>
        </div>
     </div>
-    <div class="col-12 col-lg-4">
-       <div class="post-item">
-       <a href=""><img src="../Asset/image/post2.png" width="100%">
-      <div class="hovershow">
-      <div class="hover-image-post d-none d-lg-flex">
-       </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
-      </div>
-      </a>
-       <div class="post-caption">
-       <p><a href="">چگونه یک رزومه حرفه ای طراحی کنیم؟ </a></p>
-       <span>نوشتن رزومه می تونه چالش برانگیز باشه در این مقاله کوتاه به بررسی نحوه نوشتن رزومه خوب می پردازیم </span>
-       </div>
-       </div>
-    </div>
-    <div class="col-12 col-lg-4">
-       <div class="post-item">
-       <a href=""><img src="../Asset/image/post3.png" width="100%">
-      <div class="hovershow">
-      <div class="hover-image-post d-none d-lg-flex">
-       </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
-      </div>
-      </a>
-       <div class="post-caption">
-       <p><a href="">دلایل یادگــیری و کار با وردپــــرس </a></p>
-       <span>یادگیری وردپرس برای ایجاد یک وبسایت ، این روز ها یکی از ساده ترین و کم هزینه ترین روش </span>
-       </div>
-       </div>
-    </div>
-    <div class="col-12 col-lg-4">
-       <div class="post-item">
-       <a href=""><img src="../Asset/image/post4.png" width="100%">
-      <div class="hovershow">
-      <div class="hover-image-post d-none d-lg-flex">
-       </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
-      </div>
-      </a>
-       <div class="post-caption">
-       <p><a href="">دستیار صوتی چیست؟</a></p>
-       <span>تا حالا به این فکر کردین که آیا میشه با کامپیوتر یا گوشی های هوشمند حرف زد؟ </span>
-       </div>
-       </div>
-    </div>
-    <div class="col-12 col-lg-4">
-       <div class="post-item">
-       <a href=""><img src="../Asset/image/post5.png" width="100%">
-      <div class="hovershow">
-      <div class="hover-image-post d-none d-lg-flex">
-       </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
-      </div>
-      </a>
-       <div class="post-caption">
-       <p><a href="">چتفاوت بین Angular و AngularJS</a></p>
-       <span>تفاوت بین Angular و AngularJS چیست؟ یک تفاوت حیاتی بین Angular و AngularJS این است</span>
-       </div>
-       </div>
-    </div>
-    <div class="col-12 col-lg-4">
-       <div class="post-item">
-       <a href=""><img src="../Asset/image/post6.png" width="100%">
-      <div class="hovershow">
-      <div class="hover-image-post d-none d-lg-flex">
-       </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
-      </div>
-      </a>
-       <div class="post-caption">
-       <p><a href="">چگونه توسعه‌دهنده وب شویم؟</a></p>
-       <span>آیا به یادگیری توسعه وب علاقه دارید ولی نمی‌دانید از کجا شروع کنید؟ </span>
-       </div>
-       </div>
+    <?php } ?>
+    
     </div>
   </div>
 </div>

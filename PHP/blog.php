@@ -14,7 +14,7 @@ if(isset($_POST['Record'])){
     $writer=$_POST['writer'];
     $date = time();
 
-    $result=$conn->prepare("INSERT INTO blog (title,image,content,writer,date) VALUES(?,?,?,?,?)");
+    $result=$conn->prepare("INSERT INTO blog (title,image,content,writer,date) VALUES(?,?,?,?,?) ");
     $result->bindValue(1,$title);
     $result->bindValue(2,$image);
     $result->bindValue(3,$content);
@@ -27,6 +27,6 @@ $result=$conn->prepare("SELECT * FROM writers");
 $result->execute();
 $writers=$result->fetchAll(PDO::FETCH_ASSOC);
 
-$result=$conn->prepare("SELECT * FROM blog");
+$result=$conn->prepare("SELECT * FROM blog ORDER BY id DESC" );
 $result->execute();
 $blogs=$result->fetchAll(PDO::FETCH_ASSOC);

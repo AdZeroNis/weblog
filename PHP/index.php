@@ -24,4 +24,10 @@ foreach($numusers as $numuser){}
 $menus=$conn->prepare("SELECT * FROM menu  ORDER BY sort");
 $menus->execute();
 $menus=$menus->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+$blogs=$conn->prepare("SELECT * FROM blog ");
+$blogs->execute();
+$blogs=$blogs->fetchAll(PDO::FETCH_ASSOC);
 ?>
