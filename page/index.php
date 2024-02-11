@@ -22,9 +22,13 @@ include '../php/index.php';?>
       <li class="nav-item active">
         <a class="nav-link" href="#">خانه <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">پروفایل</a>
-      </li>
+      <?php foreach($menus as $menu) {  if($menu['status']==1){ ?>
+
+<li class="nav-item">
+<a class="nav-link" href="#"><?php echo $menu['title']; ?> </a>
+</li>
+
+<?php }} ?>
       <li class="nav-item dropdown">
       <?php if (isset($_SESSION['signin'])){?>
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
