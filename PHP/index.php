@@ -30,4 +30,11 @@ $menus=$menus->fetchAll(PDO::FETCH_ASSOC);
 $blogs=$conn->prepare("SELECT * FROM blog ");
 $blogs->execute();
 $blogs=$blogs->fetchAll(PDO::FETCH_ASSOC);
+
+
+function limit_words($string, $word_limit)
+{
+    $words = explode(" ",$string);
+    return implode(" ",array_splice($words,0,$word_limit));
+}
 ?>

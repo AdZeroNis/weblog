@@ -98,7 +98,7 @@ include '../php/index.php';?>
       </a>
        <div class="post-caption">
        <p><a href=""><?php echo $blog['title']; ?></a></p>
-       <span>همان قدری که کلمات برای یک سخنران مهم است ، طراحی یک وبسایت هم برای تجارت حیاتی است ! </span>
+       <span><?php echo limit_words($blog['content'],18). "..." ?> </span>
        </div>
        </div>
     </div>
