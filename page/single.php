@@ -1,11 +1,16 @@
+<?php 
+session_start();
+include '../php/index.php';
+include '../php/single.php';
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weblog</title>
+    <title><?php echo $blogs['title']; ?></title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
   <div class="container">
@@ -20,19 +25,39 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">خانه <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">پروفایل</a>
-      </li>
+      <?php foreach($menus as $menu) {  if($menu['status']==1){ ?>
+
+<li class="nav-item">
+<a class="nav-link" href="#"><?php echo $menu['title']; ?> </a>
+</li>
+
+<?php }} ?>
       <li class="nav-item dropdown">
+      <?php if (isset($_SESSION['signin'])){?>
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          مقالات
+          حساب کاربری
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">برنامه نویسی</a>
-          <a class="dropdown-item" href="#">طراحی وب</a>
-          <a class="dropdown-item" href="#">بازی سازی</a>
+          <a class="dropdown-item" href="#">ایمیل : <?php echo $_SESSION['email']; ?></a>
+          <a class="dropdown-item" href="#">سن : <?php echo $_SESSION['age']; ?></a>
+          <a class="dropdown-item" href="#">اسم : <?php echo $_SESSION['username']; ?></a>
+<?php if (isset($_SESSION['signin']) && isset($_SESSION['role'])) { ?>
+    <?php if ($_SESSION['role'] ==  2) { ?>
+        <a class="dropdown-item" href="admin/admin.php">پنل  ادمین : <?php echo $_SESSION['role']; ?></a>
+    <?php } ?>
+          <a class="dropdown-item" href="../php/log.php">خروج</a>
         </div>
+        <?php } ?>
       </li>
+      <?php } else { ?>
+        <li class="nav-item active">
+        <a class="nav-link" href="login.php">ورود<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="register.php">ثبت نام <span class="sr-only">(current)</span></a>
+      </li>
+      <?php } ?>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0 mr-auto">
       <input class="form-control mr-sm-2 placeholder" type="search" placeholder="چی میخوای؟" aria-label="Search">
@@ -40,13 +65,15 @@
     </form>
   </div>
 </nav>
+<br><br>
+<div>
+</nav>
   </div>
-  <br><br>
   <div class="container">
     <div class="row">
         <div class="post-page">
             <div class="image-post">
-                <img src="../Asset/image/post1.png" style="max-width: 550px;">
+                <img src="<?php echo $blogs['image']; ?>" style="max-width: 550px;">
             </div>
             <div class="information-person">
             <div class="eye">
@@ -57,27 +84,23 @@
             <div class="calendar">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-            </svg> ۱۳۹۹/۱۱/۲۰</div>
+            </svg> <?php echo jdate('d F', $blogs['date']) ?></div>
             <div class="person">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-            </svg> یاسمین شاهقلی گشتی  </div>
+            </svg> <?php foreach($writers as $writer){
+                        if($blogs['writer']==$writer['id']){
+                          echo $writer['name'];
+                        }
+                      }
+                      ?>
+              </div>
 
             </div>
             <br>
             <div class="content-page">
-                <h5 style="color:#fff">چطور بفهمیم وبسایتی که طراحی کردیم خوب است یا بد؟</h5><br>
-                <p style="color:#fff">شاید اولین موردی که به ذهن شما می رسد جنبه های بصری باشد مثل رنگ ، فونت ، تصاویر ویا سایر جنبه ها اما طراحی خوب واقعاً چیزی بسیار پیچیده تر از یک تصویر زیبا و بدون هدف خاص است .
-یک طراحی واقعا خوب در پشت هر عنصر آن یک استراتژی دارد ، دارای تجربه کاربری بی عیب و نقصی است و هر چیزی که بازدید کننده در وب سایت مشاهده می کند یا  کاری انجام می دهد با دقت مورد بررسی قرار می گیرد و تمام عناصر دارای نظم خاصی هستند. درواقع وبسایت فقط یک کارت وزیت تجاری نیست بلکه نماد هویت تجاری برند شماست.  در ادامه باهم چند مورد از مواردی که طراحی ما را بهتر و مناسب می کند بررسی می کنیم :</p>
-                <p >１- هدفمند بودن</p>
-                <p>هر تجارتی هدفی دارد و هر وبسایتی بیانگر و نماد هدف تجارت شماست. هدف شما از داشتن وبسایت چیست؟ هدف نمی تواند چیزی مبهم مانند "من می خواهم یک وب سایت اموزشی داشته باشم " باشد زیرا به شدت کلی است و هدف کلی باعث ظاهر نامناسب برای وبسایت شما می شود. هدف را دقیق مشخص کنید بطور مثال "می خواهم سایت من  دورهای اموزشی در زمینه برنامه نویسی را ارائه کند" و"یا باعث بهبود و سرعت ثبتنام شاگردان اموزشگاه ما باشد". هنگامی که شما درک کاملی از آنچه که دقیقاً می خواهید با وب سایت خود بدست آورید داشته باشید ، می توانید نحوه عملکرد وب سایت را برای دستیابی به آن تعیین کنید (چه پیام هایی باید وجود داشته باشد یا ساختار سایت چگونه باشد).</p>
-                <p>２- قابلیت استفاده</p>
-                <p>اگر می خواهید بازدیدکنندگان خود را حفظ کرده و آنها را تشویق به بازگشت کنید ، باید رابط کاربری ساده ای داشته باشید. امروزه بیشتر افراد بی تاب هستند اگر آنها را وادار کنید خیلی سخت فکر یا کار کنند ، آنها به راحتی وبسایت شمارا ترک می کنند و دیگر باز نخواهند گشت. اگر این فروشگاه آنلاین متعلق به شماست ، باید مطمئن شوید که وب سایت عملکرد جستجوی بی عیب و نقصی داشته باشد ، محصولات به طور واضح طبقه بندی شده و مقایسه آنها آسان باشد ، سبد خرید کاملاً کارایی داشته باشد و جست جو در سایت  آسان و واضح باشد.</p>
-                <p>３- شفافیت</p>
-                <p>پس از تعیین هدف برای وبسایت باید آن را برای مخاطب خود به وضوح روشن کنید. البته نباید مطالب و عناصر به قدری زیاد باشد که وبسایت شلوغ و آشفته شود و ذهن مخاطب با یک پیام نامشخص مواجه شود و به اصطلاح گیج شود. وبسایت های خوب ساختاری واضح دارند و به مخاطب شان می دهند که چه چیزی می تواند با وب سایت بدست آورند و چرا باید به آن سایت اهمیت دهند. برای مثال  یک فروشگاه آنلاین باید بیان صریح آنچه را می توان در آن خریداری کرد و دلیل آن را به مخاطب نشان دهد. این روش ارزش سایت شمارا به شدت بالا می برد برای همین رویکرد طراحی مینیمال و ساده ترند این روزهاست ( همه سر و صدا و شلوغی غیرضروری را قطع می کند و پیام اصلی را واضح و قابل مشاهده و درک می کند).</p>
-                <p>４- ظاهر مدرن</p>
-                <p>همانطور که در بالا ذکر شد ، در هنگام تعیین اینکه یک وب سایت به خوبی طراحی شده است ، ظاهر وب سایت شما واقعاً مهم است . استفاده از رنگ ، شکل و... مناسب و بجا و صدالبته طراحی به روز اهمیت وبسایت شما را افزایش می دهد و تجارت شمارا در نظر مخاطب یک تجارت منظم و روبه رشد نشان می دهد.</p>
-            </div><br><br>
+                <h5 style="color:#fff"><?php echo $blogs['title']; ?></h5><br>
+                <?php echo $blogs['content']; ?>
             <div class="comment">
              <b>نظرات کاربران در رابطه با این دوره</b>
              <br><br>
@@ -122,7 +145,7 @@
         </div>
     </div>
   </div>
-  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
+  <br><br>  
 <footer>
   <div class="footer1">
     <div class="container">

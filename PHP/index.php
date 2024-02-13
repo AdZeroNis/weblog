@@ -27,7 +27,7 @@ $menus=$menus->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-$blogs=$conn->prepare("SELECT * FROM blog ");
+$blogs=$conn->prepare("SELECT * FROM blog order by date LIMIT  12");
 $blogs->execute();
 $blogs=$blogs->fetchAll(PDO::FETCH_ASSOC);
 

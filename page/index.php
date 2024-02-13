@@ -89,11 +89,11 @@ include '../php/index.php';?>
   <?php foreach($blogs as $blog){ ?>
     <div class="col-12 col-lg-4">
        <div class="post-item">
-       <a href=""><img src="<?php echo $blog['image']; ?>" width="100%">
+       <a href="single.php?post=<?php echo $blog['title']; ?>"><img src="<?php echo $blog['image']; ?>" width="100%">
       <div class="hovershow">
       <div class="hover-image-post d-none d-lg-flex">
        </div>
-       <a href="" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
+       <a href="single.php?post=<?php echo $blog['title']; ?>" class="more-opst btn d-none d-lg-flex">مشاهده ی مقاله</a>
       </div>
       </a>
        <div class="post-caption">
