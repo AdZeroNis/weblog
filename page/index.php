@@ -56,9 +56,9 @@ include '../php/index.php';?>
       <?php } ?>
       
     </ul>
-    <form class="form-inline my-2 my-lg-0 mr-auto">
-      <input class="form-control mr-sm-2 placeholder" type="search" placeholder="چی میخوای؟" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
+    <form class="form-inline my-2 my-lg-0 mr-auto" method="post">
+      <input class="form-control mr-sm-2 placeholder" type="search" placeholder="چی میخوای؟" aria-label="Search" name="searchcontent">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search">جستجو</button>
     </form>
   </div>
 </nav>
