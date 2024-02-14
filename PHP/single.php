@@ -22,3 +22,4 @@ $result->bindValue(1,$idblog);
 $result->execute();
 $numviews=$result->fetch(PDO::FETCH_ASSOC);
 foreach($numviews as $numview){}
+
