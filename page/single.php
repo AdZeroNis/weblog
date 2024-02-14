@@ -99,7 +99,7 @@ include '../php/single.php';;
             <div class="content-page">
                 <h5 style="color:#fff"><?php echo $blogs['title']; ?></h5><br>
                 <?php echo $blogs['content']; ?>
-            <!-- <div class="comment">
+            <div class="comment">
              <b>نظرات کاربران در رابطه با این دوره</b>
              <br><br>
             <form action="" method="post">
@@ -142,7 +142,7 @@ include '../php/single.php';;
         </div>
         </div>
     </div>
-  </div> -->
+  </div>
   <br><br> 
 </body>
 <script src="../js/jquery-3.5.1.min.js"></script> 

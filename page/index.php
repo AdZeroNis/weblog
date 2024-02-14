@@ -45,6 +45,7 @@ include '../php/index.php';?>
           <a class="dropdown-item" href="../php/log.php">خروج</a>
         </div>
         <?php } ?>
+        <a class="dropdown-item" href="../php/log.php">خروج</a>
       </li>
       <?php } else { ?>
         <li class="nav-item active">
